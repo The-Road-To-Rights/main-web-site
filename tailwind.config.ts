@@ -12,11 +12,16 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      textShadow: {
+        outline: '5px 5px 10px rgba(246, 254, 255, 1)',
+      },
       fontFamily:{
         poppins: ['Poppins', 'sans-serif']
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 };
 export default config;
