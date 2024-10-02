@@ -4,45 +4,49 @@ import logo from '../../images/construction-page/logo.png';
 
 export default function Construction() {
     return (
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col lg:flex-row h-screen">
+        <div className="bg-white shadow-lg overflow-hidden flex flex-col lg:flex-row h-screen">
 
             <div className="flex-1 flex items-center justify-center p-8">
                 <div className="max-w-md w-full">
 
-                    <div className="flex justify-center mb-8">
+                    <div className="flex w-full object-left-top mb-10 -mt-10">
                         <Image
                             src={logo}
                             alt="Road to Rights Logo"
-                            width={220}
-                            height={75}
+                            width={200}
+
                         />
                     </div>
 
 
-                    <div className="text-center">
-                        <h2 className="text-3xl font-semibold text-gray-800">
-                            Under Construction
+                    <div className="text-left">
+                        <h2 className=" text-[40px] font-poppins font-extrabold text-ellipsis text-left text-[#333]">
+                            Under<br />Construction
                         </h2>
-                        <p className="text-gray-600 mt-4">
+                        <p className="w-[511px] h-[97px] shrink-0 text-[color:var(--Gray-3,#828282)] font-poppins pr-10 text-base mt-5 font-normal leading-[normal] tracking-[0.2px]">
                             Our team is working on the issue. You can subscribe to our mailing list so you can be notified when things are livelier.
                         </p>
                     </div>
 
 
-                    <div className="mt-8">
+                    <div className="-mt-5">
                         <input
+                            className="w-[375px] h-[50px] px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
                             type="email"
                             placeholder="Email"
-                            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
                         />
-                        <button className="mt-4 w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">
+                        <button className="mt-4 w-[375px] h-[50px] bg-[#0076A1] text-white px-4 py-2 rounded-md hover:bg-black">
                             Subscribe
                         </button>
                     </div>
 
+                    <div className="mt-10">
+                        <h2>You can also follow us on</h2>
+
+                    </div>
+
                 </div>
             </div>
-
 
             <div className="flex-1 hidden lg:block">
                 <Image
