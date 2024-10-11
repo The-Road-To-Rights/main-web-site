@@ -1,5 +1,4 @@
 import React from 'react';
-
 // News Item component 
 const NewsItem = ({ title, content }) => (
   <div className="bg-white border border-gray-200 rounded-[20px] shadow-md p-6 mb-4 hover:shadow-lg transition-shadow duration-300 hover:border-2 hover:border-purple-500 hover:shadow-lg transition-all">
