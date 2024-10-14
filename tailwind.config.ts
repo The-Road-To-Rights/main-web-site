@@ -13,15 +13,13 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       textShadow: {
-        outline: '5px 5px 10px rgba(246, 254, 255, 1)',
+        outline: "5px 5px 10px rgba(246, 254, 255, 1)",
       },
-      fontFamily:{
-        poppins: ['Poppins', 'sans-serif']
-      }
+      fontFamily: {
+        poppins: "var(--font-poppins)",
+      },
     },
   },
-  plugins: [
-    require('tailwindcss-textshadow')
-  ],
+  plugins: [require("tailwindcss-textshadow")],
 };
 export default config;

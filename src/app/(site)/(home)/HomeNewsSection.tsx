@@ -1,6 +1,10 @@
 import React from 'react';
+<<<<<<< HEAD
 
 // News Item component
+=======
+// News Item component 
+>>>>>>> 5493985a8c347ef9811d02d9b91fa9e0f2c520f5
 const NewsItem = ({ title, content }) => (
   <div className="bg-white border-0 rounded-2xl shadow-md p-6 mb-4 hover:scale-105 hover:shadow-lg transition-transform duration-300 hover:border-purple-500 hover:border-2">
   <h3 className="text-purple-700 font-normal mb-2">{title}</h3>

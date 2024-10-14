@@ -1,6 +1,8 @@
 import Image from "next/image";
 import sideImg from '../../images/construction-page/side-img.jpeg';
 import logo from '../../images/construction-page/logo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faFacebook,faSquareTwitter,faSquareInstagram,faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
 export default function Construction() {
     return (
@@ -42,7 +44,14 @@ export default function Construction() {
 
                     <div className="mt-10">
                         <h2>You can also follow us on</h2>
-
+                    </div>
+                    <div className="relative bottom-5 left-40 ml-10">
+                        <ul className="flex space-x-4">
+                            <li className="w-5 h-5"><FontAwesomeIcon icon={faFacebook} /></li>
+                            <li className="w-5 h-5"><FontAwesomeIcon icon={faSquareTwitter} /></li>
+                            <li className="w-5 h-5"><FontAwesomeIcon icon={faSquareInstagram} /></li>
+                            <li className="w-5 h-5"><FontAwesomeIcon icon={faLinkedin} /></li>
+                        </ul>
                     </div>
 
                 </div>
