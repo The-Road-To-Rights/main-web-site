@@ -10,15 +10,15 @@ const HomeVideoSection = () => {
         alt='no image'
         layout="fill"
         objectFit="cover"
-        className='opacity-40'
+        className='opacity-50'
       />
 
       <div className='absolute inset-0 flex items-center justify-center z-10 columns-2 p-10 gap-20 '>
 
-        <p className='text-[#6F2D8D] lg:text-4xl  md:text-3xl text-right font-poppins font-bold text-shadow-outline leading-8'>
-          WE <span className='text-black'>RECEIVED THE</span> UNITED<br />
-          NATIONS <span className='text-black'> SDG </span> ACTION<br />
-          AWARDS <span className='text-black'>IN </span> 2018
+        <p className='text-[#6F2D8D] text-2xl lg:text-4xl md:text-3xl text-right font-poppins font-bold text-shadow-custom leading-8 '>
+          WE <span className='text-black font-normal'>RECEIVED THE</span> UNITED<br />
+          NATIONS <span className='text-black font-normal'> SDG </span> ACTION<br />
+          AWARDS <span className='text-black font-normal'>IN </span> 2018
         </p>
 
         <iframe className='h-80 hover:aspect-square w-2/4'
@@ -31,10 +31,7 @@ const HomeVideoSection = () => {
         </iframe>
       </div>
 
-
-
-
-
+    
     </div>
 
 
