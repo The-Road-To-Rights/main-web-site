@@ -71,4 +71,4 @@ const HomeHistorySection = () => {
   );
 };
 
-export default HomeHistorySection;
+export default HomeHistorySection; 
