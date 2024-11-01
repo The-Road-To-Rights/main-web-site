@@ -1,5 +1,5 @@
 const HomeHeroSection = () => {
-  return <div className="h-screen flex items-center justify-center bg-gradient-to-b from-purple-200 to-blue-200">
+  return <div className="h-screen flex items-center justify-center bg-gradient-to-b from-purple-200 to-blue-200 mx-auto px-4">
     <div className="text-center">
       <h1 className="text-[#272C30] font-bold leading-[142.113%] lg:text-8xl md:text-8xl sm:text-5xl">
         TOGETHER!

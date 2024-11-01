@@ -13,11 +13,11 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       textShadow: {
-        outline: "5px 5px 10px rgba(246, 254, 255, 1)",
+        'custom': '-2px -2px 0 #F6FEFF, 2px -2px 0 #F6FEFF, -2px 2px 0 #F6FEFF, 2px 2px 0 #F6FEFF',
       },
-      fontFamily: {
-        poppins: "var(--font-poppins)",
-      },
+      fontFamily:{
+        poppins: ['Poppins', 'sans-serif']
+      }
     },
   },
   plugins: [require("tailwindcss-textshadow")],
