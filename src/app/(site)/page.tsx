@@ -1,3 +1,4 @@
+import HomeBecomeVolunteer from "./(home)/HomeBecomeVolunteer";
 import HomeHeroSection from "./(home)/HomeHeroSection";
 import HomeHistorySection from "./(home)/HomeHistorySection";
 import HomeNewsSection from "./(home)/HomeNewsSection";
@@ -10,6 +11,7 @@ export default function Home() {
       <HomeHistorySection />
       <HomeNewsSection />
       <HomeVideoSection />
+      <HomeBecomeVolunteer/>
     </div>
   );
 }

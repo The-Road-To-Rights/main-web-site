@@ -1,7 +1,12 @@
 import React from 'react';
 
+type NewsItemProps = {
+     title:string
+     content:string
+}
+
 // News Item component 
-const NewsItem = ({ title, content }) => (
+const NewsItem = ({ title, content }: NewsItemProps) => (
   <div className="bg-white border-0 rounded-2xl shadow-md p-6 mb-4 hover:scale-105 hover:shadow-lg transition-transform duration-300 hover:border-purple-500 hover:border-2">
   <h3 className="text-[#6F2D8D] font-Roboto mb-2">{title}</h3>
   <p className="text-[#151513] font-Poppins mb-4">{content}</p>
