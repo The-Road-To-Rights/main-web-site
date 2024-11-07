@@ -12,6 +12,7 @@ export default function Home() {
       <HomeHistorySection />
       <HomeNewsSection />
       <HomeVideoSection />
+      <HomeBecomeVolunteer/>
       <Navbar/>
     </div>
   );
