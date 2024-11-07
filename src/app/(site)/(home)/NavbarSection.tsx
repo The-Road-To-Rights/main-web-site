@@ -1,4 +1,4 @@
-// Enable this component as a Client Component
+
 "use client";
 
 import React, { useState, useEffect } from 'react';
@@ -29,7 +29,7 @@ const Navbar = () => {
     { name: 'CONTACT US', href: '/contact' },
   ];
 
-  // Handle scroll effect
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -39,9 +39,9 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Handle click outside to close menu
+
   useEffect(() => {
-    const handleClickOutside = (event:any) => {
+    const handleClickOutside = (event: any) => {
       if (isMenuOpen && !event.target.closest('nav')) {
         setIsMenuOpen(false);
       }
@@ -52,9 +52,8 @@ const Navbar = () => {
   }, [isMenuOpen]);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-black/80 backdrop-blur-sm' : 'bg-transparent'
-    }`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/80 backdrop-blur-sm' : 'bg-transparent'
+      }`}>
       <div className="max-w-full px-4 md:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           {/* Logo */}
@@ -68,7 +67,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
+
           <div className="hidden lg:flex items-center space-x-1 xl:space-x-8">
             {navItems.map((item) => (
               <Link
@@ -82,7 +81,6 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -98,11 +96,10 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+
         <div
-          className={`lg:hidden overflow-hidden transition-all duration-300 ${
-            isMenuOpen ? 'max-h-96' : 'max-h-0'
-          }`}
+          className={`lg:hidden overflow-hidden transition-all duration-300 ${isMenuOpen ? 'max-h-96' : 'max-h-0'
+            }`}
         >
           <div className="px-2 pt-2 pb-3 space-y-1 bg-black/90 backdrop-blur-sm rounded-lg mt-2">
             {navItems.map((item) => (
