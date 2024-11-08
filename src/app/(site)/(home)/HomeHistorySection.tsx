@@ -1,7 +1,3 @@
-
-
-
-
 import Image from "next/image";
 import imageOne from '../../images/history-section/a.png';
 import imageTwo from '../../images/history-section/b.png';
@@ -11,12 +7,11 @@ const HomeHistorySection = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-white to-purple-200 via-purple-100 flex flex-col md:flex-row p-4 md:p-0">
 
-      {/* Image Section */}
+  
       <div className="relative w-full md:w-1/2 h-[400px] md:h-auto flex justify-center items-center mt-8 md:mt-0">
         <div className="relative w-full max-w-[700px] h-[400px] md:h-[800px] flex flex-col items-center">
 
-          {/* Image Two */}
-          <div className="absolute top-[110px] left-[220px] transform -translate-x-1/2 md:top-[110px] md:left-[220px] md:rotate-0 shadow-lg">
+          <div className="absolute top-[110px] left-[220px]  rotate-0 shadow-lg">
             <Image
               src={imageTwo}
               alt='Image Two'
@@ -27,8 +22,8 @@ const HomeHistorySection = () => {
             />
           </div>
 
-          {/* Image Three - Bottom-most image */}
-          <div className="absolute top-[225px] left-[40px] transform -translate-x-1/2 md:top-[225px] md:left-[40px] shadow-lg">
+
+          <div className="absolute top-[225px] left-[40px] md:left-[40px] rotate-0 shadow-lg">
             <Image
               src={imageThree}
               alt='Image Three'
@@ -39,8 +34,7 @@ const HomeHistorySection = () => {
             />
           </div>
 
-          {/* Image One */}
-          <div className="absolutetop-[365px] left-[240px] transform -translate-x-1/2 md:top-[365px] md:left-[240px] shadow-lg">
+          <div className="absolute top-[365px] left-[240px] rotate-0 shadow-lg">
             <Image
               src={imageOne}
               alt='Image One'
@@ -50,10 +44,13 @@ const HomeHistorySection = () => {
               style={{ objectFit: 'cover' }}
             />
           </div>
+
+
+          
+
         </div>
       </div>
 
-      {/* Text Section */}
       <div className="w-full md:w-1/2 p-4 md:pl-14 md:pt-24">
         <h1 className="text-4xl md:text-6xl font-bold text-black font-poppins pb-6 md:pb-20">HISTORY</h1>
         <p className="text-black text-base md:text-xl text-justify mb-4 md:mb-6 pr-2 md:pr-6 font-poppins">
@@ -71,7 +68,7 @@ const HomeHistorySection = () => {
         </a>
       </div>
 
-    </div>
+    </div >
   );
 };
 
