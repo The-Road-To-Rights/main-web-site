@@ -22,6 +22,7 @@
     "next-sanity": "^9.5.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-tweet": "^3.2.1",
     "sanity": "^3.58.0",
     "styled-components": "^6.1.13",
     "tailwindcss-textshadow": "^2.1.3"

@@ -5,6 +5,7 @@ import HomeNewsSection from "./(home)/HomeNewsSection";
 import HomeVideoSection from "./(home)/HomeVideoSection";
 import Navbar from "./(home)/NavbarSection";
 import HomePartnerSection from "./(home)/HomePartnersSection";
+import HomeNewsLetterSection from "./(home)/HomeNewsLetterSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HomeHistorySection />
       <HomeVideoSection />
       <HomeNewsSection />
+      <HomeNewsLetterSection/>
       <HomePartnerSection/>
       <HomeBecomeVolunteer/>
       <Navbar/>
