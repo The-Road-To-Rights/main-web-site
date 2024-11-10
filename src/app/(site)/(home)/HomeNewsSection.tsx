@@ -40,6 +40,7 @@ const NewsAndUpdates = () => {
             </svg>
           </a>
         </div>
+        
 
         {/* News Items */}
         <div className="News Items">
