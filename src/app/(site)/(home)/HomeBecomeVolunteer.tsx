@@ -1,12 +1,3 @@
-import React from 'react'
-
-const HomeBecomeVolunteer = () => {
-  return (
-    <div className='w-full h-'></div>
-  )
-}
-
-export default HomeBecomeVolunteer
 import Image from 'next/image';
 import React from 'react';
 import picture from '../../images/Become-Volunteer section/join-img 1.png';

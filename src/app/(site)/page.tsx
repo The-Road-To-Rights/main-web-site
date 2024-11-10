@@ -4,14 +4,16 @@ import HomeHistorySection from "./(home)/HomeHistorySection";
 import HomeNewsSection from "./(home)/HomeNewsSection";
 import HomeVideoSection from "./(home)/HomeVideoSection";
 import Navbar from "./(home)/NavbarSection";
+import HomePartnerSection from "./(home)/HomePartnersSection";
 
 export default function Home() {
   return (
     <div>
       <HomeHeroSection />
       <HomeHistorySection />
-      <HomeNewsSection />
       <HomeVideoSection />
+      <HomeNewsSection />
+      <HomePartnerSection/>
       <HomeBecomeVolunteer/>
       <Navbar/>
     </div>
