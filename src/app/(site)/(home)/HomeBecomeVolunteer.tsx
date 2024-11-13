@@ -1,49 +1,37 @@
-import React from 'react'
+import backGroundImg from '../../images/Become-Volunteer section/JoinUs.svg';
+import Image from 'next/image';
+import React from 'react';
 
 const HomeBecomeVolunteer = () => {
   return (
-    <div className='w-full h-'></div>
-  )
-}
+    <div className='relative w-full h-full bg-[#e4ebff]'>
+      <Image
+        src={backGroundImg}
+        alt='no image'
+        objectFit='cover'
+      />
 
-export default HomeBecomeVolunteer
-import Image from 'next/image';
-import React from 'react';
-import picture from '../../images/Become-Volunteer section/join-img 1.png';
+      <div className='absolute z-10 top-[50%] left-[6%]'>
+        <h1 className='text-white font-poppins text-left'><span className='lg:text-5xl md:text-4xl text-2xl'>Become a</span><br />
+          <span className='font-bold tracking-wide lg:text-7xl md:text-6xl text-3xl'>Volunteer</span></h1>
+      </div>
 
-const HomeBecomeVolunteer = () => {
-    return (
-        <div className='absolute  w-full lg:h-37 md:h-96 h-72 bg-[#e4ebff]'>
-            <div className='w-full h-full bg-[#6f2d8d] '
-                style={{
-                    clipPath: 'polygon(0 30%, 75% 45%, 97% 100%, 0 100%)',
-                }}
-            >
-            </div>
+      <div className='absolute z-10 top-[65%] left-[6%] lg:mt-7 md:mt-10 mt-6 flex items-center justify-center'>
+        <p className='text-left text-white font-poppins lg:text-[15px] md:text-[11px] text-[9px] leading-relaxed'>their books and go through them in earnest. This was the primary reason that inspired our founder<br />
+          to start the United Children’s Club with them as members of the initiative. their books and go <br />
+          through them in earnest. This was the primary reason that inspired our founder to start the United <br />
+          Children’s Club with them as members of the initiative.</p>
+      </div>
+      
+      <div className='absolute z-10 top-[80%] left-[6%] lg:mt-8 md:mt-11 mt-9'>
+        <button className="lg:px-8 lg:py-3 md:px-5 md:py-2 px-4 py-2 bg-[#151513] text-white font-poppins font-semibold 
+                          rounded-lg shadow-lg hover:bg-[#2a2a27] transition-colors lg:text-[20px] md:text-[14px] text-[10px] ">
+          Join Us
+        </button>
+      </div>
+    </div>
 
-            <div className='justify-'></div>
-
-            
-            <div className='absolute rounded-full z-10 overflow-hidden bg-[#09132e] opacity-30
-                            lg:top-[18%] lg:left-[64%] md:top-[14.5%] md:left-[63.5%] left-[62.5%] top-[13%]
-                            lg:w-[27rem] lg:h-[27rem] md:w-[18.5rem] md:h-[18.5rem] w-[13.5rem] h-[13.5rem]'>
-            </div>
-            <div className='absolute rounded-full z-10 overflow-hidden bg-[#09132e] opacity-20
-                            lg:top-[22%] lg:left-[65.5%] md:top-[18.5%] md:left-[65.5%] left-[65.2%] top-[18%]
-                            lg:w-[24rem] lg:h-[24rem] md:w-[16.5rem] md:h-[16.5rem] w-[11.5rem] h-[11.5rem]'>
-            </div>
-            <div className='absolute rounded-full z-10 overflow-hidden 
-                            lg:top-[24.7%] top-[22%] left-[66.7%]
-                            lg:w-22 lg:h-22 md:w-60 md:h-60 w-40 h-40'>
-                <Image
-                    src={picture}
-                    alt='no picture'
-                    layout='fill'
-                    objectFit='cover'
-                />
-            </div>
-        </div>
-    );
+  );
 };
 
 export default HomeBecomeVolunteer;
