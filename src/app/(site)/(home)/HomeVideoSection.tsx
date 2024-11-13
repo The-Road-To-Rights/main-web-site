@@ -1,26 +1,41 @@
-import Image from 'next/image';
-import img from './r2r.jpg';
-
+import Image from "next/image";
+import r2rImage from "../../images/video-section/background.jpg";
 
 const HomeVideoSection = () => {
   return (
-    <div className="h-72 bg-transparent bg-black">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 p-2">
+    <div className="relative w-full h-80">
+      <Image
+        src={r2rImage}
+        alt='no image'
+        layout="fill"
+        objectFit="cover"
+        className='opacity-40'
+      />
 
-        <div className="p-4 bg-blue-100">
-          <p className='text-lg font-medium text-align:left p-20'>WE RECEIVED THE UNITED NATIONS SDG ACTION AWARDS IN 2018</p>
-        </div>
-        <div className="p-4 bg-blue-200">
-          <iframe src="https://www.youtube.com/watch?v=nIk2gzsKAtg&t=1s" frameBorder="10" className='h-64 w-72'></iframe>
-        </div>
+      <div className='absolute inset-0 flex items-center justify-center z-10 columns-2 p-10 gap-20 '>
+
+        <p className='text-[#6F2D8D] text-2xl lg:text-4xl md:text-3xl text-right font-poppins font-bold text-shadow-custom leading-8'>
+          WE <span className='text-black font-normal'>RECEIVED THE</span> UNITED<br />
+          NATIONS <span className='text-black font-normal'> SDG </span> ACTION<br />
+          AWARDS <span className='text-black font-normal'>IN </span> 2018
+        </p>
+
+        <iframe
+          className="h-80 hover:aspect-square w-2/4"
+          src="https://www.youtube.com/embed/GkZgdGhLhwM"
+          title="UN SDG Action Award 2018 - UN Global Festival of Action, Bonn, Germany."
+          frameBorder="10"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </div>
 
-      <div>
-        <img src="./r2r.jpg" alt="" />
-      </div>
-      
+
+
+
+
     </div>
-
   );
 };
 
