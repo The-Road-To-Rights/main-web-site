@@ -55,6 +55,8 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-textshadow")],
+  plugins: [require("tailwindcss-textshadow"),
+    require('tailwindcss'),
+    require('autoprefixer'),],
 };
 export default config;
