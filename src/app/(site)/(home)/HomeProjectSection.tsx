@@ -28,6 +28,7 @@ const HomeProjectSection = () => {
               key={project.id}
               className="bg-white rounded-lg shadow-lg overflow-hidden flex transform transition duration-300 hover:scale-105 hover:shadow-2xl"
             >
+              
               <div className="w-1/2">
                 <Image
                   src={project.imageSrc}
