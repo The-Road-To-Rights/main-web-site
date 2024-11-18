@@ -54,14 +54,15 @@ const HomeNewsLetterSection: React.FC = () => {
   return (
     <section className="flex flex-col lg:flex-row items-start justify-center bg-blue-50 py-8 lg:py-16 px-4 lg:px-8 pb-24">
       {/* Tweet Section */}
-      <div className="light w-full lg:w-96 bg-white shadow-lg rounded-[30px] overflow-hidden mx-auto lg:mx-0 mb-8 lg:mb-0 p-5 lg:py-0 sm:py-0 relative ">
+      <div className="light w-full lg:w-96 bg-white shadow-lg rounded-[30px] overflow-hidden mx-auto lg:mx-0 mb-8 lg:mb-0 p-5 lg:py-0 sm:py-0 relative " data-aos="fade-right">
         <Tweet id="1854537712914596018" />
       </div>
 
       {/* Newsletter Form Section */}
       <div
         className="relative bg-[#6F2D8D] text-white w-full lg:w-[35rem] p-6 lg:p-16 rounded-[30px] lg:rounded-l-sm flex flex-col justify-center mx-auto lg:mx-0 overflow-hidden"
-        style={{ marginTop: "5.25rem", marginBottom: "-6.12rem" }}
+        style={{ marginTop: "5.25rem", marginBottom: "-6.12rem" }} 
+        data-aos="fade-left"
       >
         {/* Layer Image with Zoom */}
         <div className="absolute inset-0 transform scale-[1.5] opacity-[0.06] lg:pl-[5rem] sm:pl-0 pr-1 pointer-events-none rounded">

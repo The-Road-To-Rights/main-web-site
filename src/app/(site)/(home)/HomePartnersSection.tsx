@@ -20,9 +20,9 @@ const HomePartnersSection: React.FC = () => {
   const clonedImages = [...images, ...images, ...images, ...images, ...images, ...images];
 
   return (
-    <section className="py-8 bg-blue-50">
+    <section className="py-8 bg-blue-50" >
       {/* Title Section */}
-      <div className="flex justify-center mb-1">
+      <div className="flex justify-center mb-1" data-aos="fade-up">
         <div className="p-4 text-start">
           <p className="text-2xl font-semibold text-black tracking-widest font-poppins">
             OUR
@@ -34,7 +34,7 @@ const HomePartnersSection: React.FC = () => {
       </div>
 
       {/* Marquee Section associated with tailwind.config.ts */}
-      <div className="relative overflow-x-hidden w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+      <div className="relative overflow-x-hidden w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]" data-aos="fade-left">
         <div className="py-12 animate-marquee whitespace-nowrap">
           {clonedImages.map((image, index) => (
             <div
