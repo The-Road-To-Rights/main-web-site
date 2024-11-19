@@ -32,6 +32,6 @@ const HomeBecomeVolunteer = () => {
     </div>
 
   );
-};
+}
 
 export default HomeBecomeVolunteer;
