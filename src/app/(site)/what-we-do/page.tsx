@@ -1,5 +1,4 @@
 "use client";
-
 import FourCorePilars from "./FourCorePilars";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -10,6 +9,7 @@ export default function WhatWeDoPage() {
     useEffect(() => {
     AOS.init({
          duration: 500,
+         offset: 200,
          once: false,
        })
  }, [])
